@@ -1,10 +1,10 @@
 site:
   title: Boost.Capy Docs (Incubator)
-  url: https://sentientsergio.github.io/capy-docs
+  url: https://sentientsergio.github.io/boost-docs
   start_page: capy::index.adoc
   robots: allow
   keys:
-    repo_url: 'https://github.com/sentientsergio/capy-docs'
+    repo_url: 'https://github.com/sentientsergio/boost-docs'
 
 content:
   sources:
