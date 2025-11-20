@@ -1,5 +1,5 @@
 site:
-  title: Boost.Capy
+  title: Boost.Capy Docs (Incubator)
   url: https://sentientsergio.github.io/capy-docs
   start_page: capy::index.adoc
   robots: allow
@@ -8,9 +8,9 @@ site:
 
 content:
   sources:
-    - url: ../..
-      start_path: upstream-rts/doc
-      edit_url: 'https://github.com/sentientsergio/capy-docs/edit/{refname}/{path}'
+    - url: .
+      start_path: docs/capy
+      branches: HEAD
 
 ui:
   bundle:
@@ -33,7 +33,6 @@ antora:
 
 asciidoc:
   attributes:
-    # Enable pagination
     page-pagination: ''
   extensions:
     - '@cppalliance/asciidoctor-boost-links'

@@ -19,7 +19,7 @@ nav:
   - modules/ROOT/nav.adoc
 ext:
   cpp-reference:
-    config: doc/mrdocs.yml
+    config: docs/capy/mrdocs.yml
   cpp-tagfiles:
     using-namespaces:
       - boost::rts
