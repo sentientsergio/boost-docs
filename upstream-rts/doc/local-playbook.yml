@@ -8,9 +8,9 @@ site:
 
 content:
   sources:
-    - url: ..
-      start_path: doc
-      edit_url: 'https://github.com/cppalliance/rts/edit/{refname}/{path}'
+    - url: ../..
+      start_path: upstream-rts/doc
+      edit_url: 'https://github.com/sentientsergio/capy-docs/edit/{refname}/{path}'
 
 ui:
   bundle:
