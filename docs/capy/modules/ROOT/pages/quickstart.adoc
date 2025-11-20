@@ -41,7 +41,7 @@ target_link_libraries(capy_hello PRIVATE Boost::rts)
 set_target_properties(capy_hello PROPERTIES CXX_STANDARD 11)
 ```
 
-Compiler/feature notes:
+Requirements and options:
 
 * Requires C++11.
 * Supports builds without exceptions and without RTTI.
@@ -51,4 +51,3 @@ Compiler/feature notes:
 * Register and access more interesting services: xref:guides/registering-services.adoc[]. 
 * Inject stored services into callables: xref:guides/injection.adoc[]. 
 * Behavior and guarantees: xref:concepts.adoc[]. 
-* API reference: xref:reference:boost/rts.adoc[]. 

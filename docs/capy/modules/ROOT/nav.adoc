@@ -5,4 +5,3 @@
 ** xref:guides/injection.adoc[Inject dependencies with invoke]
 * xref:concepts.adoc[Concepts and behaviors]
 * xref:faq.adoc[Troubleshooting and FAQ]
-* xref:reference:boost/rts.adoc[Reference]

@@ -25,9 +25,15 @@ Why use it:
 * Designed for small hosts: minimal templates, fast builds.
 * Deterministic teardown (reverse construction order).
 
+== Requirements
+
+* C++11 or later; CI covers GCC 5–15, Clang 3.9–20 (incl. Apple Clang), and MSVC 14.34+.
+* Exceptions and RTTI are optional; APIs throw when enabled and rely on error codes otherwise.
+* Depends on Boost (headers and `Boost::system`/`throw_exception`/`assert`); `find_package(Boost 1.86 COMPONENTS rts REQUIRED)` in CMake.
+* Optional compression helpers need Zlib or Brotli present at build time.
+
 Next steps:
 
 * New to Capy? Start with the xref:quickstart.adoc[Quickstart].
 * Doing real work? See xref:guides/registering-services.adoc[Register and access services] and xref:guides/injection.adoc[Inject dependencies].
 * Need deeper behavior details? See xref:concepts.adoc[Concepts and behaviors].
-* API details live in the xref:reference:boost/rts.adoc[Reference].
