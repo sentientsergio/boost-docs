@@ -21,7 +21,6 @@ int main() {
     app.start(); // calls logger::start if present; only call once
     // ... use log ...
     app.stop();  // idempotent; reverse creation order; thread-safe
-    app.join();  // waits until stop completes
 }
 ```
 

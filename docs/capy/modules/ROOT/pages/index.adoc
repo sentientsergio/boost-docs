@@ -14,23 +14,21 @@ Boost.Capy is a small C++11 library for collecting optional runtime services, st
 
 What it provides:
 
-* Type-based service registry (`boost::rts::polystore`) with optional aliasing via `key_type`.
+* Type-based service registry (`boost::rts::polystore`).
 * Two-phase lifecycle management (`start`/`stop`) via `boost::rts::application`.
-* Dependency injection helper (`boost::rts::invoke`) to wire services into callables.
-* Compression helpers (brotli/zlib) when enabled.
+* Optional compression helpers (brotli/zlib) you can expose as services.
 
 Why use it:
 
 * Works with and without exceptions or RTTI.
 * Designed for small hosts: minimal templates, fast builds.
-* Deterministic teardown (reverse construction order).
 
 == Requirements
 
 * C++11 or later; CI covers GCC 5–15, Clang 3.9–20 (incl. Apple Clang), and MSVC 14.34+.
 * Exceptions and RTTI are optional; APIs throw when enabled and rely on error codes otherwise.
-* Depends on Boost (headers and `Boost::system`/`throw_exception`/`assert`); `find_package(Boost 1.86 COMPONENTS rts REQUIRED)` in CMake.
-* Optional compression helpers need Zlib or Brotli present at build time.
+* Depends on Boost (headers plus `boost::system`/`throw_exception`/`assert`); `find_package(Boost COMPONENTS rts REQUIRED)` in CMake.
+* Optional codec helpers link to Zlib and/or Brotli if those features are enabled.
 
 Next steps:
 
