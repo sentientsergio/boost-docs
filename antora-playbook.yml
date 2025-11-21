@@ -11,6 +11,9 @@ content:
     - url: .
       start_path: docs/capy
       branches: HEAD
+    - url: .
+      start_path: docs/beast2
+      branches: HEAD
 
 ui:
   bundle:

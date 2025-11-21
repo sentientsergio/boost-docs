@@ -1,0 +1,10 @@
+name: beast2
+version: ~
+title: Boost.Beast2
+start_page: index.adoc
+asciidoc:
+  attributes:
+    source-language: asciidoc@
+    table-caption: false
+nav:
+  - modules/ROOT/nav.adoc
